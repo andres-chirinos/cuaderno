@@ -129,7 +129,7 @@ El intervalo de confianza del $95\%$ para $N$ se sitúa aproximadamente entre **
 
 Esta metodología utiliza el modelo de Poisson y la teoría de máxima verosimilitud, pero es importante recordar que factores prácticos como el sesgo de muestreo, el número de jugadores, la forma en que se juegan las manos y la calidad del barajado pueden afectar la precisión de la estimación.
 
-Espero que este análisis detallado y la explicación matemática les resulte tan interesante como útil para entender mejor la aplicación de la estadística en nuestro juego. ¿Qué opinan? ¿Han notado alguna diferencia en la frecuencia de pókers en sus partidas que podría sugerir algún sesgo o factor extra? ¡Los leo en los comentarios!
+Espero que este análisis detallado y la explicación matemática les resulte tan interesante como útil para entender mejor la aplicación de la estadística. ¿Qué opinan? ¿Han notado alguna diferencia en la frecuencia de pókers en sus partidas que podría sugerir algún sesgo o factor extra? ¡Los leo en los comentarios!
 
 
 ### Muro de la fama

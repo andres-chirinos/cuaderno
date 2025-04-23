@@ -1,0 +1,1 @@
+scp test.txt $REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH

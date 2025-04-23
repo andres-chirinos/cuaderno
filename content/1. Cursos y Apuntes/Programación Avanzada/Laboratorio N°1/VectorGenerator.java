@@ -105,6 +105,8 @@ public class VectorGenerator {
     public static void runCLI() {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextLine()) {
+            // System.out.println("Ingrese el vector (números separados por espacios o
+            // comas):");
             String input = scanner.nextLine();
             if (input.trim().isEmpty()) {
                 break;
@@ -121,7 +123,7 @@ public class VectorGenerator {
             }
             String[] algorithms = { "Bubble Sort", "Shell Sort", "Insertion Sort", "Selection Sort", "Quick Sort" };
             for (int i = 0; i < algorithms.length; i++) {
-                int[] sortedVector;
+                int[] sortedVector = null;
                 long startTime = 0, endTime = 0, duration;
                 switch (i) {
                     case 0:
@@ -151,6 +153,8 @@ public class VectorGenerator {
                         break;
                 }
                 duration = (endTime - startTime) / 1000000; // convertir a milisegundos
+                // System.out.println(algorithms[i] + " - Vector ordenado: " +
+                // Arrays.toString(sortedVector));
                 System.out.println(duration);
             }
         }
@@ -230,6 +234,7 @@ public class VectorGenerator {
                     return;
                 }
                 int[] vector = VectorGenerator.generateVector(n, min, max);
+                // Mostrar el vector como una lista de números separados por espacios
                 vectorTextArea.setText(Arrays.toString(vector).replaceAll("[\\[\\],]", ""));
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(this, "Ingresa valores numéricos válidos.", "Error",
@@ -243,6 +248,7 @@ public class VectorGenerator {
                 JOptionPane.showMessageDialog(this, "El vector está vacío.", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
+            // Parsear el vector (números separados por espacios o comas)
             String[] tokens = text.split("[,\\s]+");
             int[] vector;
             try {
@@ -289,6 +295,7 @@ public class VectorGenerator {
                     return;
             }
             duration = (endTime - startTime) / 1000000; // en milisegundos
+            // Actualizar el área de texto con el vector ordenado
             vectorTextArea.setText(Arrays.toString(sortedVector).replaceAll("[\\[\\],]", ""));
             timeLabel.setText("Tiempo: " + duration + " ms");
         }

@@ -1,0 +1,1 @@
+Define una muestra estratificada a la 
