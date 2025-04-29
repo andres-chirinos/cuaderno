@@ -69,6 +69,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Citations({bibliographyFile: "./content/ref.bib", suppressBibliography: true, linkCitations: true, prettyLink: false})
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
@@ -84,6 +85,7 @@ const config: QuartzConfig = {
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.NotFoundPage(),
+      Plugin.CNAME()
     ],
   },
 }
