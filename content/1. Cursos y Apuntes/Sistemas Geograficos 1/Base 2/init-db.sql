@@ -16,7 +16,7 @@ CREATE TABLE escuelas (
     nivel VARCHAR(100),--[] NOT NULL CHECK (nivel <@ ARRAY['inicial', 'primaria', 'secundaria']),
     telefono VARCHAR(20),
     foto_url TEXT,
-    --geom GEOMETRY(Point, 4326) GENERATED ALWAYS AS (ST_SetSRID(ST_MakePoint(longitud, latitud), 4326)) STORED,
+    geom GEOMETRY(Point, 4326) GENERATED ALWAYS AS (ST_SetSRID(ST_MakePoint(longitud, latitud), 4326)) STORED,
     latitud DOUBLE PRECISION NOT NULL,
     longitud DOUBLE PRECISION NOT NULL
 );
